@@ -96,9 +96,6 @@ def generate_facebook_csv(team_list):
         result_csv.write(result_line)
         result_csv.close()
 
-def update_likes(input_csv):
-    raise NotImplementedError
-
 """
 Some extra links
 

@@ -37,6 +37,8 @@ def twitter_search_team(team_name):
         page_dict = {'twitter_name' : user["screen_name"],
                      'twitter_id' : user["id"],
                      'twitter_followers' : user["followers_count"],
+                     'twitter_friends' : user["friends_count"],
+                     'twitter_favs_count' : user["favourites_count"],
                      'twitter_created_at' : created_at,
                      'twitter_statuses' : user["statuses_count"],
                      'twitter_url' : url
@@ -46,6 +48,8 @@ def twitter_search_team(team_name):
         page_dict = {'twitter_name' : "NaN",
                      'twitter_id' : "NaN",
                      'twitter_followers' : "NaN",
+                     'twitter_friends' : "NaN",
+                     'twitter_favs_count' : "Nan",
                      'twitter_created_at' : "NaN",
                      'twitter_statuses' : "NaN",
                      'twitter_url' : "NaN"

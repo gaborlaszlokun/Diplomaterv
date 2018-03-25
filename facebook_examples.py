@@ -12,6 +12,3 @@ team_id = "19034719952"
 #        print (key, ":", value)
 
 print(facebook_search_team(team_id))
-
-#filename = "main_teams_list.csv"
-#generate_facebook_csv(filename)
