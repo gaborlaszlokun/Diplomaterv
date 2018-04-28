@@ -14,7 +14,9 @@ access_token = get_facebook_access_token()
 
 def get_page_from_id(page_id):
     api_endpoint = "https://graph.facebook.com/v2.4/"
+    #TODO: beírni ami még kell!
     fb_graph_url = api_endpoint + page_id + "?fields=id,rating_count,were_here_count,name,likes,link,talking_about_count,category&access_token=" + access_token
+    print(fb_graph_url)
     try:
         api_request = Request(fb_graph_url)
         api_response = urlopen(api_request)
@@ -34,9 +36,10 @@ def facebook_search_team(team_id):
                      'facebook_id' : page_json['id'],
                      'facebook_likes' : page_json['likes'],
                      'facebook_talking_about_count' : page_json['talking_about_count'],
-                     'facebook_category' : page_json['category'].replace(",",";"),
+                     #'facebook_category' : page_json['category'].replace(",",";"),
                      'facebook_url' : page_json['link'].replace(",",";"),
                      'facebook_rating_count' : page_json['rating_count'],
+                     #overall_star_rating
                      'facebook_were_here_count' : page_json['were_here_count']
                      }
         return page_dict
@@ -45,9 +48,10 @@ def facebook_search_team(team_id):
                      'facebook_id' : "NaN",
                      'facebook_likes' : "NaN",
                      'facebook_talking_about_count' : "NaN",
-                     'facebook_category' : "NaN",
+                     #'facebook_category' : "NaN",
                      'facebook_url' : "NaN",
                      'facebook_rating_count' : "NaN",
+                     #overall_star_rating
                      'facebook_were_here_count' : "Nan"
                      }
         return page_dict

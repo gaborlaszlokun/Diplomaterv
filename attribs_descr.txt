@@ -1,0 +1,44 @@
+facebook_name : NaN
+facebook_likes : NaN
+facebook_talking_about_count : NaN
+facebook_url : NaN
+# ERRŐL VALUECOUNTS facebook_rating_count : NaN
+# ERRŐL VALUECOUNTS facebook_were_here_count : Nan
+
+twitter_name : CARPoficial
+# KÉZZEL KORRIGÁLNI twitter_loc : Buenos Aires, Argentina
+twitter_followers : 2812916
+twitter_friends : 76
+twitter_favs_count : 162
+# VÉLEMÉNYES twitter_created_at : 2010-07-01
+twitter_statuses : 65638
+twitter_url : NaN
+
+instagram_name : carpoficial
+instagram_profile_pic_url : https://instagram.fbud4-1.fna.fbcdn.net/vp/74c5396da4ad7940e174afd7bdd248a4/5B6FE966/t51.2885-19/s320x320/19052049_471829823151934_8210662063203155968_a.jpg
+instagram_media : 3259
+instagram_followers : 1721596
+instagram_follows : 53
+instagram_url : http://www.cariverplate.com.ar/
+instagram_last_like : 16162
+instagram_last_comment : 166
+instagram_last_img_url : https://instagram.fbud4-1.fna.fbcdn.net/vp/f287f250b88cf4ea3867b8a171a8aa7b/5B747F21/t51.2885-15/e35/29718277_401348846994286_335266328241766400_n.jpg
+
+Alap CSV-be:
+
+facebook_name :
+facebook_likes :
+facebook_talking_about_count :
+facebook_url : 
+twitter_name :
+twitter_followers :
+twitter_friends :
+twitter_favs_count :
+twitter_statuses :
+twitter_url :
+instagram_name :
+instagram_profile_pic_url :
+instagram_media :
+instagram_followers :
+instagram_follows :
+instagram_url :

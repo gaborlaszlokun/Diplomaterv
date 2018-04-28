@@ -23,12 +23,20 @@ def instagram_search_team(query):
     insta_json = json.loads(insta_json)
     hashtags = str(insta_json).translate(str.maketrans('','', ",'\\\"!.;{}[]")).split(" ")
     hashtags = list(set([x for x in hashtags if x.startswith("#")]))
-                                              
+    hashtags = " ".join(str(x) for x in hashtags)                                  
     
     root = insta_json['entry_data']['ProfilePage'][0]['graphql']['user']
     profile_pic_url = root["profile_pic_url_hd"]
 
     # i alapján az utolsó 10 content adatai
+    last_ten_likes = 0
+    last_ten_comments = 0
+    for i in range(10):
+        last_ten_likes += root['edge_owner_to_timeline_media']['edges'][i]['node']['edge_liked_by']['count']
+        last_ten_comments += root['edge_owner_to_timeline_media']['edges'][i]['node']['edge_media_to_comment']['count']
+        
+    last_ten_likes = int(round(last_ten_likes/10,0))
+    last_ten_comments = int(round(last_ten_comments/10))  
     i = 0
     last_like = root['edge_owner_to_timeline_media']['edges'][i]['node']['edge_liked_by']['count']
     last_comment = root['edge_owner_to_timeline_media']['edges'][i]['node']['edge_media_to_comment']['count']
@@ -43,6 +51,8 @@ def instagram_search_team(query):
                  'instagram_url' : root["external_url"],
                  'instagram_last_like' : last_like,
                  'instagram_last_comment' : last_comment,
+                 'instagram_avg_like' : last_ten_likes,
+                 'instagram_avg_comment' : last_ten_comments,
                  'instagram_last_img_url' : last_img_url,
                  'instagram_hashtags' : hashtags
                  }
