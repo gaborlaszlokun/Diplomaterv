@@ -1,0 +1,48 @@
+team,twitter_followers
+Chelsea FC,11994530
+Arsenal FC,13616578
+Manchester United,18104551
+FC Barcelona,28873350
+Real Madrid,30221535
+
+team,twitter_friends
+Toulouse FC,3510
+1. FC Köln,6006
+Manchester City,54525
+Arsenal FC,156817
+Liverpool FC,384249
+
+team,twitter_favs_count
+Atalanta,9996
+CA Osasuna,10867
+Villarreal CF,12134
+Chelsea FC,14819
+CD Alavés,29968
+
+team,twitter_statuses
+Everton FC,82449
+West Ham United,82968
+Los Angeles Galaxy,85235
+FC Barcelona,94725
+Manchester City,110817
+
+team,instagram_media
+Bayern München,9609
+FC Barcelona,10636
+Galatasaray,12218
+Besiktas,12288
+Fenerbahce,13857
+
+team,instagram_followers
+Paris Saint-Germain,12184790
+Bayern München,12266424
+Manchester United,21462159
+FC Barcelona,56020910
+Real Madrid,57153409
+
+team,instagram_follows
+Empoli FC,204
+Dijon FCO,298
+New York Red Bulls,318
+Los Angeles Galaxy,949
+1. FC Köln,1077

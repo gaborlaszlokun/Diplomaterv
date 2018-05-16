@@ -16,7 +16,7 @@ def get_page_from_id(page_id):
     api_endpoint = "https://graph.facebook.com/v2.4/"
     #TODO: beírni ami még kell!
     fb_graph_url = api_endpoint + page_id + "?fields=id,rating_count,were_here_count,name,likes,link,talking_about_count,category&access_token=" + access_token
-    print(fb_graph_url)
+    #print(fb_graph_url)
     try:
         api_request = Request(fb_graph_url)
         api_response = urlopen(api_request)
